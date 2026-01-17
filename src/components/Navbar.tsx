@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from './ui/button'
 
 function Navbar() {
   return (
@@ -7,8 +8,8 @@ function Navbar() {
             <h1>CA MONK</h1>
 
             <div className='flex gap-5'>
-                <span>View All</span>
-                <span>Create New Blog</span>
+               
+                <Button variant={'outline'} className='cursor-pointer'>Create New Blog</Button>
             </div>
         </div>
     </header>
