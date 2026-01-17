@@ -3,6 +3,8 @@ import { Badge } from './ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
 import { formatDate } from '@/utils/formattedDate'
 import { useQuery } from '@tanstack/react-query'
+import BlogDetailLoader from './loaders/BlogDetailLoader'
+import { Skeleton } from './ui/skeleton'
 
 function BlogDetail({blogId,setBlogId}) {
 
@@ -18,15 +20,15 @@ function BlogDetail({blogId,setBlogId}) {
    })
  
  
-if (isBlogPending) return 'Loading Blog Details...'
+
 if(blogError) return 'Something Went Wrong!'+blogError.message
 
   return (
    <section className='min-h-screen'>
-
-    {blog && <Card>
+{isBlogPending && <BlogDetailLoader/>}
+    {!isBlogPending && blog && <Card>
       <CardHeader>
-         <img src={blog?.coverImage} alt="cover-image" className='w-full h-75' />
+        {blog?.coverImage ? <img src={blog?.coverImage} alt="cover-image" className='w-full h-75' /> : <Skeleton className='w-250 h-100 rounded-2xl'/>}
          <span>{blog?.category?.map((ele)=><Badge variant={'secondary'}>{ele}</Badge>)} </span>
         <CardTitle className='text-7xl'>{blog?.title}</CardTitle>
         
