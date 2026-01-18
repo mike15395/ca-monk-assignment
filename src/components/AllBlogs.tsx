@@ -26,8 +26,8 @@ function AllBlogs({blogId,setBlogId}) {
 
 
   return (
-    <section  className='ml-2'>
-        <ScrollArea  className="h-150 w-100 rounded-md border p-2">
+    <section  className='w-full sm:w-auto px-2'>
+        <ScrollArea  className="w-full max-w-full h-[70vh] sm:h-[85vh] rounded-md  p-2 overflow-x-hidden">
           
         {isListPending &&
           Array.from({ length: 6 }).map((_, index) => (

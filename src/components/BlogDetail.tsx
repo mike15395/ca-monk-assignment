@@ -24,11 +24,11 @@ function BlogDetail({blogId,setBlogId}) {
 if(blogError) return 'Something Went Wrong!'+blogError.message
 
   return (
-   <section className=' bg-white rounded-2xl w-full h-full'>
+   <section className=' bg-white rounded-2xl w-full min-w-0 px-4 py-2'>
 {isBlogPending && <BlogDetailLoader/>}
-    {!isBlogPending && blog && <Card>
-      <CardHeader>
-        {blog?.coverImage ? <img src={blog?.coverImage} alt="cover-image" className='w-full h-75' /> : <Skeleton className='w-250 h-100 rounded-2xl'/>}
+    {!isBlogPending && blog && <Card  className="w-full">
+      <CardHeader className="space-y-4">
+        {blog?.coverImage ? <img src={blog?.coverImage} alt="cover-image" className='w-full max-h-[40vh] object-cover rounded-xl' /> : <Skeleton className='w-full h-[200px] rounded-xl'/>}
          <div className='flex justify-between items-center'>
            <span>{blog?.category?.map((ele)=><Badge variant={'secondary'} className='text-gray-500 font-bold'>{ele}</Badge>)} </span>
            <span className='text-gray-600'>{formatDate(blog?.date)}</span>

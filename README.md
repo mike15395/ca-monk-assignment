@@ -10,3 +10,8 @@
 
 
 
+# Scope For Future Improvments
+- Edit and Delete Blog feature.
+- make custom backend for blogs.
+- authentication and authorization login/signup.
+- adding more fields in blog like author,referencences,sharing options etc.

@@ -73,12 +73,18 @@ export default function AddBlog() {
 
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={setOpen}   
+    
+  >
       <DialogTrigger asChild>
         <Button variant="outline" className='cursor-pointer bg-gray-500 text-white hover:scale-110'>+ New Blog</Button>
       </DialogTrigger>
 
-      <DialogContent>
+      <DialogContent className="
+    w-[95vw] sm:max-w-lg
+    max-h-[90vh]
+    overflow-y-auto
+  ">
         <DialogHeader>
           <DialogTitle>Add New Blog</DialogTitle>
           <DialogDescription>Fill out the form below</DialogDescription>
@@ -126,7 +132,7 @@ export default function AddBlog() {
             {errors.category && <p className="text-red-500 text-sm">{errors.category.message}</p>}
           </div>
 
-          <ScrollArea className='w-full h-22'>
+          <ScrollArea >
             <div className='flex flex-col gap-2 '>
               <Label>Content</Label>
               <Textarea {...register('content')} rows={5} />
@@ -134,7 +140,7 @@ export default function AddBlog() {
             </div>
           </ScrollArea>
 
-          <DialogFooter>
+          <DialogFooter >
             <Button type="button" variant="outline" className='cursor-pointer bg-red-400 text-white hover:scale-105' onClick={() => {setOpen(false) ;reset()}}>
               Cancel
             </Button>

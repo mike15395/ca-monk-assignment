@@ -141,6 +141,19 @@
       ],
       "content": "some random content",
       "date": "2026-01-18T06:19:59.365Z"
+    },
+    {
+      "id": "2f56",
+      "title": "Big 4 Interview Questions for CA Freshers 2026",
+      "description": "Technical + HR questions asked in Deloitte, EY, KPMG, PwC campus placements",
+      "coverImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200",
+      "category": [
+        "FINANCE",
+        "TECH",
+        "CAREER"
+      ],
+      "content": "<p>Most asked Big 4 questions...</p><p><strong>Technical:</strong></p><ul><li>Goodwill calculation methods</li><li>GST input tax credit rules</li><li>AS 10 Property Plant & Equipment</li></ul><p><strong>HR:</strong> Why Big 4? Where do you see yourself in 5 years?</p>",
+      "date": "2026-01-18T07:19:23.655Z"
     }
   ]
 }
