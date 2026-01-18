@@ -15,3 +15,11 @@
 - make custom backend for blogs.
 - authentication and authorization login/signup.
 - adding more fields in blog like author,referencences,sharing options etc.
+
+# Screenshots
+
+![screenshot1](./public/screenshots/Screenshot%20from%202026-01-18%2012-54-38.png)
+![screenshot1](./public/screenshots/Screenshot%20from%202026-01-18%2012-54-58.png)
+![screenshot1](./public/screenshots/Screenshot%20from%202026-01-18%2012-55-03.png)
+![screenshot1](./public/screenshots/Screenshot%20from%202026-01-18%2012-55-12.png)
+![screenshot1](./public/screenshots/Screenshot%20from%202026-01-18%2012-55-23.png)
