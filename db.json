@@ -129,6 +129,18 @@
       ],
       "content": "<p>Your first year in CA practice...</p><p><strong>Legal Setup:</strong></p><ul><li>ICAI membership activation</li><li>GST registration for proprietorship</li><li>Trade license from municipality</li></ul><p><strong>Software:</strong> TallyPrime, ClearTax, GenITax</p>",
       "date": "2026-01-17T18:47:18.346Z"
+    },
+    {
+      "id": "b3d5",
+      "title": "random title",
+      "description": "random description",
+      "coverImage": "https://images.pexels.com/photos/4778621/pexels-photo-4778621.jpeg",
+      "category": [
+        "FINANCE",
+        "LIFESTYLE"
+      ],
+      "content": "some random content",
+      "date": "2026-01-18T06:19:59.365Z"
     }
   ]
 }

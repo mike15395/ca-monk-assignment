@@ -75,7 +75,7 @@ export default function AddBlog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" className='cursor-pointer'>+ New Blog</Button>
+        <Button variant="outline" className='cursor-pointer bg-gray-500 text-white hover:scale-110'>+ New Blog</Button>
       </DialogTrigger>
 
       <DialogContent>
@@ -135,10 +135,10 @@ export default function AddBlog() {
           </ScrollArea>
 
           <DialogFooter>
-            <Button type="button" variant="outline" className='cursor-pointer' onClick={() => {setOpen(false) ;reset()}}>
+            <Button type="button" variant="outline" className='cursor-pointer bg-red-400 text-white hover:scale-105' onClick={() => {setOpen(false) ;reset()}}>
               Cancel
             </Button>
-            <Button type="submit" className='cursor-pointer' variant={'outline'} disabled={mutation.isPending}>
+            <Button type="submit" className='cursor-pointer bg-gray-500 text-white hover:scale-105' variant={'outline'} disabled={mutation.isPending}>
               {mutation.isPending ? 'Creating...' : 'Create Blog'}
             </Button>
           </DialogFooter>

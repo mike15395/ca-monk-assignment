@@ -26,8 +26,8 @@ function AllBlogs({blogId,setBlogId}) {
 
 
   return (
-    <section >
-        <ScrollArea  className="h-150 w-100 rounded-md border">
+    <section  className='ml-2'>
+        <ScrollArea  className="h-150 w-100 rounded-md border p-2">
           
         {isListPending &&
           Array.from({ length: 6 }).map((_, index) => (
@@ -35,14 +35,14 @@ function AllBlogs({blogId,setBlogId}) {
           ))}
 
       {!isListPending && blogs?.map(({id,title,description,category,date})=>
-      <Item onClick={()=>setBlogId(id)} key={id} className='cursor-pointer'>
+      <Item onClick={()=>setBlogId(id)} key={id} className='cursor-pointer bg-white p-4 mb-4 hover:scale-105'>
         <ItemHeader className='flex justify-between'>
-            <div className='flex gap-2'>{category && category?.map((ele)=><Badge variant={'outline'}>{ele}</Badge>)}</div>
-            <div>{calculateTime(date)}<span> days ago</span></div>
+            <div className='flex gap-2'>{category && category?.map((ele)=><Badge variant={'outline'} className='text-white bg-gray-500'>{ele}</Badge>)}</div>
+            <div className='text-gray-500'>{calculateTime(date)}<span> days ago</span></div>
         </ItemHeader>
         <ItemContent>
-            <ItemTitle>{title}</ItemTitle>
-            <ItemDescription>{description}</ItemDescription>
+            <ItemTitle className='text-xl'>{title}</ItemTitle>
+            <ItemDescription className='text-gray-700'>{description}</ItemDescription>
         </ItemContent>
       </Item>)}
       </ScrollArea>
